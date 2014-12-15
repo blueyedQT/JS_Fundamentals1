@@ -23,6 +23,18 @@
 			sum += i;
 		}
 		console.log(sum);
+
+		// 5. Create another simple for loop that sums all the numbers between 1 to 1 million. Now, we want you to figure out how long in milliseconds this operation takes. Study http://www.w3schools.com/jsref/jsref_gettime.asp to learn more about how you can get the time in milliseconds. You can basically get the time of the operation by getting this timestamp before you start the for loop and getting another timestamp after the for loop is over. By subtracting the two timestamps, you can obtain how long this operation took.
+		var start = new Date().getTime();
+		// var start = window.performance.now(); // This was something I read about when reseaching, it is supposedly more correct.
+		var sum = 0;
+		for (var i = 1; i <= 1000000; i++) {
+			sum += i;
+		}
+		var end = new Date().getTime();
+		// var end = window.performance.now();  // This was something I read about when reseaching, it is supposedly more correct.
+		var time = end-start;
+		console.log(time);
 		
 	</script>
 
